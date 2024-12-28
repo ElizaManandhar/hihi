@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Shopy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="index.html" id="shopyLink" aria-label="Home">SHOPY</a>
+            <a href="index.html" aria-label="Home Page">Home</a>
+            <a href="shop.html" aria-label="Shop Page">Shop</a>
+            <a href="about.html" aria-label="About Us Page">About Us</a>
+            <a href="login.html" aria-label="My Profile Page">My Profile</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="shop">
+            <div class="shop-container">
+                <center>
+                    <h2>Shop Our Collection</h2>
+                    <p>Choose your style!</p>
+                    <div class="shop-buttons">
+                        <button class="shop-button" onclick="scrollToSection('men')">Men's Fashion</button>
+                        <button class="shop-button" onclick="scrollToSection('women')">Women's Fashion</button>
+                    </div>
+                </center>
+            </div>
+        </section>
+
+        <!-- Men's Fashion Section -->
+        <div id="men" class="product-section">
+            <h2>Men's Fashion</h2>
+            <div class="product-grid">
+                <div class="product-box">
+                    <img src="img/WhatsApp Image 2024-12-02 at 03.48.21_f55c3f4c.jpg" alt="Men's Shirt">
+                    <h3>Native Black & White Jacket</h3>
+                    <p>Rs-2500</p>
+                    <div class="action-buttons">
+                        <button class="order-button" onclick="location.href='login.html'">Order Now</button>
+                        <form method="POST" action="cart.html">
+                            <input type="hidden" name="item_id" value="1">
+                            <button type="submit" name="action" value="add" class="add-to-cart-button">Add to Cart</button>
+                        </form>
+                    </div></div>
+                <div class="product-box">
+                    <img src="img/WhatsApp Image 2024-12-02 at 04.45.48_8f5482e4.jpg" alt="Men's Jeans">
+                    <h3>Contrast Stitch Minimal Jacket</h3>
+                    <p>Rs-3000</p>
+                    <div class="action-buttons">
+                        <button class="order-button" onclick="location.href='login.html'">Order Now</button>
+                        <form method="POST" action="cart.php">
+                            <input type="hidden" name="item_id" value="1">
+                            <button type="submit" name="action" value="add" class="add-to-cart-button">Add to Cart</button>
+                        </form>
+                    </div></div>
+                <div class="product-box">
+                    <img src="img/WhatsApp Image 2024-12-02 at 05.10.09_d1dc09db.jpg" alt="Men's Shirt">
+                    <h3>White Sweater</h3>
+                    <p>Rs-2000</p>
+                    <div class="action-buttons">
+                        <button class="order-button" onclick="location.href='login.html'">Order Now</button>
+                        <form method="POST" action="cart.php">
+                            <input type="hidden" name="item_id" value="1">
+                            <button type="submit" name="action" value="add" class="add-to-cart-button">Add to Cart</button>
+                        </form>
+                    </div></div>
+        </div>
+
+        <!-- Women's Fashion Section -->
+        <div id="women" class="product-section">
+            <h2>Women's Fashion</h2>
+            <div class="product-grid">
+                <div class="product-box">
+                    <img src="img/WhatsApp Image 2024-12-02 at 04.45.51_69880732.jpg" alt="Women's Dress">
+                    <h3>Bomber Jacket</h3>
+                    <p>Rs-2500</p>
+                    <div class="action-buttons">
+                        <button class="order-button" onclick="location.href='login.html'">Order Now</button>
+                        <form method="POST" action="cart.php">
+                            <input type="hidden" name="item_id" value="1">
+                            <button type="submit" name="action" value="add" class="add-to-cart-button">Add to Cart</button>
+                        </form>
+                    </div>
+            </div>
+                <div class="product-box">
+                    <img src="img/WhatsApp Image 2024-12-02 at 05.12.41_ecce5b9e.jpg" alt="Women's Bag">
+                    <h3>Mysisloops Red Bows Cardigan</h3>
+                    <p>Rs-2000</p>
+                    <div class="action-buttons">
+                        <button class="order-button" onclick="location.href='login.html'">Order Now</button>
+                        <form method="POST" action="cart.php">
+                            <input type="hidden" name="item_id" value="1">
+                            <button type="submit" name="action" value="add" class="add-to-cart-button">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="img/WhatsApp Image 2024-12-02 at 04.59.10_5adf24c6.jpg" alt="Women's Dress">
+                    <h3>Vintage Jeans</h3>
+                    <p>Rs-1500</p>
+                    <div class="action-buttons">
+                        <button class="order-button" onclick="location.href='login.html'">Order Now</button>
+                        <form method="POST" action="cart.php">
+                            <input type="hidden" name="item_id" value="1">
+                            <button type="submit" name="action" value="add" class="add-to-cart-button">Add to Cart</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-description">
+            <h2>About Shopy</h2>
+            <p>Welcome to Shopy, your one-stop destination for fashionable and trendy clothing. 
+                Our collection features the latest designs for men and women, offering unmatched quality 
+                and affordability. Whether you're looking for everyday casuals or statement pieces, 
+                Shopy is here to meet your style needs.
+            </p>
+            <p>Follow us on social media for the latest updates and exclusive offers!</p>
+        </div>
+        <div class="footer-description">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:shopy@gmail.com">shopy@gmail.com</a></p>
+            <p>Phone: <a href="tel:+977980121212">+977 980121212</a></p>
+            
+            <h3>Our Location</h3>
+            <p>Shopy, Kalanki, Kathmandu, Nepal</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
